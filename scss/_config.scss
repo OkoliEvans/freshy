@@ -1,0 +1,27 @@
+$light-color: #666;
+$primary-color: #eee;
+$dark-color: #192a56;
+$green: #27ae60;
+$box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+
+//paddings and margins
+$spacing: (10, 20, 30, 40, 50);
+
+@each $space in $spacing {
+  .m-#{$space} {
+    margin: #{$space}px;
+  }
+
+  .my-#{$space} {
+    margin: #{$space}px 0;
+  }
+
+  .p-#{$space} {
+    padding: #{$space}px;
+  }
+
+  .py-#{$space} {
+    padding: #{$space}px 0;
+  }
+}
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Yummy fresh foods</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="logo" class="p-30">
+        <i class="fas fa-utensils"></i>
+        <span class="logo-text">Freshy</span>
+      </div>
+
+      <nav class="navBar">
+        <li><a id="active" href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#vendor">Vendor</a></li>
+        <li><a href="#review">Reviews</a></li>
+        <li><a href="#profile" hidden>Profile</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </nav>
+      <div class="darkMode"></div>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-shopping-cart" id="cart"></i>
+        <i class="fas fa-bars" id="bars"></i>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        name="search_box"
+        id="search-box"
+        placeholder="search dishes..."
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- Dishes section -->
+    <section class="dishes" id="dishes">
+
+      <h3 class="sub-heading"> our dishes </h3>
+      <h1 class="heading"> Popular Dishes</h1>
+
+      <div class="box-container">
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/oha-soup.webp" alt="ora soup">
+          <h3>Hot spicy ora soup</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N1500</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/bitterleaf-soup.jpg" alt="onugwu soup">
+          <h3>Bitterleaf soup with semo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N1700</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/fried_rice_salad.webp" alt="fried rice">
+          <h3>Fried rice with salad</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N1200</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/jollof-chicken-rep.jpg" alt="jollof rice">
+          <h3>Spicy jollof rice</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N750</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/Abacha.jpg" alt="Abacha">
+          <h3>Native abacha</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N500</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+        <div class="box">
+          <a href="#" class="fas fa-heart"></a>
+          <a href="#" class="fas fa-eye"></a>
+          <img src="./assets/dishes/indomie-egg.webp" alt="indomie">
+          <h3>Indomie with vegetables</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+          <span>N1500</span>
+          <a href="#" class="btn">add to cart</a>
+        </div>
+
+      </div>
+    </section>
+    
+    <!-- Vendor Registration -->
+    <div class="form-vendor">
+      <form action="" method="post">
+        <input
+          type="text"
+          name="vendor_name"
+          id="vendor-name"
+          placeholder="enter business name"
+          required
+        />
+        <input
+          type="text"
+          name="vendor_address"
+          id="vendor-address"
+          placeholder="enter business address"
+          required
+        />
+        <input
+          type="email"
+          name="vendor_email"
+          id="vendor-email"
+          placeholder="enter business email"
+        />
+        <input
+          type="tel"
+          name="vendor_phone"
+          id="vendor-phone"
+          placeholder="enter business phone"
+          required
+        />
+        <div class="logo">
+          <label for="logo">Upload business logo</label>
+          <input
+            type="file"
+            name="vendor_logo"
+            id="vendor-logo"
+            title="upload business logo"
+          />
+        </div>
+
+        <div class="bank-details">
+          <label for="bank-details">Bank Details</label>
+          <input
+            type="text"
+            name="account_name"
+            id="vendor-account-name"
+            placeholder="enter account name"
+            required
+          />
+          <input
+            type="number"
+            name="account_number"
+            id="vendor-account-number"
+            placeholder="enter account no."
+            required
+          />
+          <input
+            type="text"
+            name="bank_name"
+            id="vendor-bank"
+            placeholder="enter bank"
+            required
+          />
+        </div>
+
+        <div class="vendor-password">
+          <input
+            type="password"
+            name="vendor_password"
+            id="vendor-password"
+            placeholder="enter password"
+            required
+          />
+          <input
+            type="password"
+            name="vendor_password"
+            id="vendor-password"
+            placeholder="confirm password"
+            required
+          />
+        </div>
+
+        <div class="vendor-reg-submit">
+          <input
+            type="submit"
+            value="Sign up"
+            id="vendor-reg-btn"
+            class="btn-action"
+          />
+        </div>
+      </form>
+    </div>
+
+    <!-- Vendor Log in  -->
+    <div class="vendor-login">
+      <form action="">
+        <input
+          type="text"
+          name="vendor_name"
+          id="vendor-name"
+          placeholder="enter business name"
+          required
+        />
+        <input
+          type="password"
+          name="vendor_password"
+          id="vendor-password"
+          placeholder="enter password"
+          required
+        />
+
+        <div class="vendor-login-btn">
+          <input
+            type="submit"
+            value="Log in"
+            id="vendor-login-btn"
+            class="btn-action"
+          />
+        </div>
+      </form>
+    </div>
+
+    <!-- Dish slider -->
+    <div class="slider"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
