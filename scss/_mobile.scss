@@ -1,57 +1,117 @@
 @media screen and (max-width: 990px) {
-    html,body {
-        font-size: 55%;
-    }
+  html,
+  body {
+    font-size: 55%;
+  }
 
-    header {
-        padding: 1rem 2rem;
+  header {
+    padding: 1rem 2rem;
 
-        #logo{
-            font-size: 2.2rem;
-        }
+    #logo {
+      font-size: 2.2rem;
     }
+  }
 }
 
-@media screen and (max-width:768px) {
-    header .icons #bars {
-        display: inline-block;
+@media screen and (max-width: 768px) {
+  header .icons #bars {
+    display: inline-block;
+  }
+
+  header .navBar {
+    display: block;
+    top: 100%;
+    position: absolute;
+    left: 100%;
+    right: 0;
+    padding: 1rem;
+    margin: 0 .1%;
+  }
+
+  header .navBar.active {
+    left: 0;
+  }
+
+  header .navBar li {
+    display: block;
+    padding: 2.4rem;
+    margin: 1rem;
+    background-color: #eee;
+
+    a {
+        font-size: 2.3rem;
     }
+  }
 
-    header .navBar  {
-        display: block;
-        top: 100%;
-        position: absolute;
-        left: 100%;
-        right: 0;
-        border-top: .1rem solid rgba(0,0,0, .2);
-        border-bottom: .1rem solid rgba(0,0,0, .2);
-        padding: 1rem;
-        
+  header .navBar li #active {
+    background-color: $green;
+    color: #fff;
+}
+
+  #search-form {
+    #search-box {
+      width: 90%;
+      margin: 0 1rem;
     }
+  }
 
-    header .navBar.active{
-        left: 0;
+  .dishes {
+    .box-container {
+      margin-left: 15%;
+      .box {
+        width: 95%;
+      }
     }
+  }
 
+  .dishes .box-container .box .fa-heart {
+    right: 1rem;
+  }
 
-    header .navBar a{
-        display: block;
-        padding: 2.5rem;
-        margin: 1rem;
-        font-size: 3rem;
-        background-color: #eee;
-    }
+  .dishes .box-container .box .fa-eye {
+    left: 1rem;
+  }
 
-    #search-form {
-        #search-box {
-            width: 90%;
-            margin: 0 1rem;
+  .sub-heading {
+    padding-top: 3rem;
+    font-size: 2rem;
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .about {
+    .row {
+      margin: 0 7%;
+
+      .content {
+        p {
+          font-size: 2.3rem;
         }
+
+        .icons-container {
+            .icons {
+                span {
+                    font-size: 2.1rem;
+                    font-weight: 600;
+                }
+            }
+        }
+      }
+
+      .image {
+        img {
+            margin-left: 5%;
+        }
+      }
     }
+  }
 }
 
 @media screen and (max-width: 990px) {
-    html,body {
-        font-size: 50%;
-    }
+  html,
+  body {
+    font-size: 50%;
+  }
 }
