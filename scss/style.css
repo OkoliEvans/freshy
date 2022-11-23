@@ -79,6 +79,70 @@
   padding: 50px 0;
 }
 
+.vendor {
+  width: 100%;
+  margin-top: 13%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.vendor .vendor-desc {
+  margin-top: 3rem;
+}
+
+.vendor .vendor-img {
+  display: block;
+}
+.vendor .vendor-img img {
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.vendor-reg-btn {
+  margin-left: 10%;
+}
+
+.vendor .form-vendor {
+  margin: 10rem auto 0 auto;
+}
+.vendor .form-vendor input {
+  width: 50%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  margin: 1.3rem auto;
+  border: 0.1rem solid #192a56;
+  border-radius: 1rem;
+}
+.vendor .form-vendor label {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: 3rem;
+}
+
+.vendor .vendor-desc p {
+  font-size: 1.5rem;
+  padding: 1.5rem 0;
+  line-height: 2;
+  margin: 0 10%;
+}
+
+.vendor .vendor-login {
+  margin: 5rem auto;
+}
+.vendor .vendor-login input {
+  width: 90%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  margin: 1.3rem auto;
+  border: 0.1rem solid #192a56;
+  border-radius: 1rem;
+}
+
+.btn:hover {
+  border: none;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -106,6 +170,7 @@ html {
   cursor: pointer;
   padding: 0.8rem 3rem;
   text-decoration: none;
+  border: none;
 }
 .btn:hover {
   background-color: #27ae60;
@@ -428,6 +493,7 @@ body {
     right: 0;
     padding: 1rem;
     margin: 0 0.1%;
+    background: #fff;
   }
   header .navBar.active {
     left: 0;

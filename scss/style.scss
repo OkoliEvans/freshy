@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Open+Sans&display=swap");
 @import "config";
+@import 'vendor';
 
 * {
   box-sizing: border-box;
@@ -30,6 +31,7 @@ html {
   cursor: pointer;
   padding: .8rem 3rem;
   text-decoration: none;
+  border: none;
 
   &:hover {
     background-color: $green;

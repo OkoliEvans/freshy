@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Yummy fresh foods</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div id="logo" class="p-30">
+        <i class="fas fa-utensils"></i>
+        <span class="logo-text">Freshy</span>
+      </div>
+
+      <nav class="navBar">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a id="active" href="#">Vendor</a></li>
+        <li><a href="#review">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!--<li><a href="#profile" hidden>Profile</a></li> -->
+      </nav>
+      <div class="darkMode"></div>
+
+      <div class="icons">
+        <i class="fas fa-search" id="search-icon"></i>
+        <i class="fas fa-shopping-cart" id="cart"></i>
+        <i class="fas fa-bars" id="bars"></i>
+      </div>
+    </header>
+
+    <!-- Search -->
+    <form action="" id="search-form">
+      <input
+        type="search"
+        name="search_box"
+        id="search-box"
+        placeholder="search dishes..."
+      />
+      <label for="search-box" class="fas fa-search"></label>
+      <i class="fas fa-times" id="close"></i>
+    </form>
+
+    <!-- Vendor Details and Registration-->
+    <section class="vendor">
+      <div class="vendor-img">
+        <img src="./assets/chef/chefcooking.webp" alt="chef" />
+      </div>
+
+      <div class="vendor-desc">
+        <h3 class="sub-heading">our vendors</h3>
+        <h1 class="heading">let's transform food service together.</h1>
+        <p>
+          The world has always been changed by visionaries and action takers,
+          and innovation has always been a big feat achieved only the truly
+          dedicated. We like to think that we have both the vision and the
+          dedication to make remarkable change to our community, and in the food
+          service industry... and that is why we need you.
+        </p>
+        <p>
+          Freshy is a disruptive food service app that connects food vendors to
+          their customers. We provide a central point, a kind of market where
+          your customers can easily place orders for your dishes and have them
+          delivered to their locations. Our job is to connect you to your fans
+          and customers, but we will also help you find many more customers
+          through our wide coverage and marketing campaigns.
+        </p>
+        <p>
+          We don't take this responsibility lightly, therefore we have a few
+          policies to help us cater for you, our vendors, and also your
+          customers that buy foods through our app. Please click on the button
+          below to read the full policy before you continue with registration.
+        </p>
+        <input type="submit" value="Read policy" class="btn vendor-reg-btn" />
+      </div>
+
+      <!-- Vendor Registration -->
+      <div class="form-vendor">
+        <form action="" method="post">
+          <h1 class="heading"> Vendor Registration</h1>
+          <input
+            type="text"
+            name="vendor_name"
+            id="vendor-name"
+            placeholder="enter business name"
+            required
+          />
+          <input
+            type="text"
+            name="vendor_address"
+            id="vendor-address"
+            placeholder="enter business address"
+            required
+          />
+          <input
+            type="email"
+            name="vendor_email"
+            id="vendor-email"
+            placeholder="enter business email"
+            required
+          />
+          <input
+            type="tel"
+            name="vendor_phone"
+            id="vendor-phone"
+            placeholder="enter business phone"
+            required
+          />
+          <div class="logo">
+            <label for="logo">Upload business logo</label>
+            <input
+              type="file"
+              name="vendor_logo"
+              id="vendor-logo"
+              title="upload business logo"
+            />
+          </div>
+
+          <div class="bank-details">
+            <label for="bank-details">Bank Details</label>
+            <input
+              type="text"
+              name="account_name"
+              id="vendor-account-name"
+              placeholder="enter account name"
+              required
+            />
+            <input
+              type="number"
+              name="account_number"
+              id="vendor-account-number"
+              placeholder="enter account no."
+              required
+            />
+            <input
+              type="text"
+              name="bank_name"
+              id="vendor-bank"
+              placeholder="enter bank"
+              required
+            />
+          </div>
+
+          <div class="vendor-password">
+            <label for="password"
+              >Enter password(must be at least 6 letters, including at least a
+              number)</label
+            >
+            <input
+              type="password"
+              name="vendor_password"
+              id="vendor-password"
+              placeholder="enter password"
+              required
+            />
+            <input
+              type="password"
+              name="vendor_password"
+              id="vendor-password"
+              placeholder="confirm password"
+              required
+            />
+          </div>
+
+          <div class="vendor-reg-submit">
+            <input
+              type="submit"
+              value="Sign up"
+              id="vendor-reg-btn"
+              class="btn-action btn"
+            />
+          </div>
+        </form>
+      </div>
+
+      <!-- Vendor Log in  -->
+      <div class="vendor-login">
+        <h1 class="heading">Vendor Log In</h1>
+        <form action="">
+          <input
+            type="text"
+            name="vendor_name"
+            id="vendor-name"
+            placeholder="enter business name"
+            required
+          />
+          <input
+            type="password"
+            name="vendor_password"
+            id="vendor-password"
+            placeholder="enter password"
+            required
+          />
+
+          <div class="vendor-login-btn">
+            <input
+              type="submit"
+              value="Log in"
+              id="vendor-login-btn"
+              class="btn-action btn"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

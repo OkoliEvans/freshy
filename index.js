@@ -9,7 +9,7 @@ function toggleHamburger() {
     navBar.classList.toggle('active');
 }
 
-//@notice:: resolve on media query
+
 window.addEventListener('scroll', () => {
     menu.classList.remove('fa-times');
     navBar.classList.remove('active');
