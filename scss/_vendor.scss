@@ -23,8 +23,13 @@
    margin-left: 10%;
 }
 
-.vendor .form-vendor {
-  margin: 10rem auto 0 auto;
+.vendor .heading-vendor-reg {
+  margin-left: -50%;
+}
+
+.vendor .reg-form {
+  margin: 10rem auto 0 25%;
+  width: 100%;
 
   input {
     width: 50%;
@@ -55,7 +60,7 @@
 
 .vendor {
   .vendor-login {
-    margin: 5rem auto;
+    margin: 5rem auto 5rem 32%;
 
     input {
       width: 90%;

@@ -103,10 +103,15 @@
   margin-left: 10%;
 }
 
-.vendor .form-vendor {
-  margin: 10rem auto 0 auto;
+.vendor .heading-vendor-reg {
+  margin-left: -50%;
 }
-.vendor .form-vendor input {
+
+.vendor .reg-form {
+  margin: 10rem auto 0 25%;
+  width: 100%;
+}
+.vendor .reg-form input {
   width: 50%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -114,7 +119,7 @@
   border: 0.1rem solid #192a56;
   border-radius: 1rem;
 }
-.vendor .form-vendor label {
+.vendor .reg-form label {
   display: block;
   font-size: 1.8rem;
   margin-top: 3rem;
@@ -128,7 +133,7 @@
 }
 
 .vendor .vendor-login {
-  margin: 5rem auto;
+  margin: 5rem auto 5rem 32%;
 }
 .vendor .vendor-login input {
   width: 90%;
@@ -546,6 +551,44 @@ body {
   }
   .about .row .image img {
     margin-left: 5%;
+  }
+  .vendor {
+    margin-top: 45%;
+  }
+  .vendor .vendor-desc .heading {
+    margin: 0 8%;
+  }
+  .vendor .vendor-desc p {
+    font-size: 2.4rem;
+  }
+  .vendor .vendor-reg-btn {
+    padding: 1rem;
+    font-size: 2.2rem;
+  }
+  .vendor .reg-form {
+    margin-left: 10%;
+  }
+  .vendor .reg-form input {
+    width: 80%;
+    padding: 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .vendor .reg-form label {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .vendor .reg-form .heading-vendor-reg {
+    font-size: 3rem;
+    margin-left: -20%;
+  }
+  .vendor .vendor-login {
+    margin: 5rem auto 5rem 10%;
+  }
+  .vendor .vendor-login input {
+    padding: 2rem;
+    font-size: 2.2rem;
+    font-weight: 600;
   }
 }
 @media screen and (max-width: 990px) {

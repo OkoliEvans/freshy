@@ -25,11 +25,10 @@
 
       <nav class="navBar">
         <li><a href="home.html">Home</a></li>
-        <li><a href="#about">About</a></li>
         <li><a id="active" href="#">Vendor</a></li>
         <li><a href="#review">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
-        <!--<li><a href="#profile" hidden>Profile</a></li> -->
+        <li><a href="#profile">Profile</a></li>
       </nav>
       <div class="darkMode"></div>
 
@@ -63,10 +62,10 @@
         <h1 class="heading">let's transform food service together.</h1>
         <p>
           The world has always been changed by visionaries and action takers,
-          and innovation has always been a big feat achieved only the truly
+          and innovation has always been a big feat achieved only by the truly
           dedicated. We like to think that we have both the vision and the
           dedication to make remarkable change to our community, and in the food
-          service industry... and that is why we need you.
+          service industry... and this is where we need you.
         </p>
         <p>
           Freshy is a disruptive food service app that connects food vendors to
@@ -87,8 +86,8 @@
 
       <!-- Vendor Registration -->
       <div class="form-vendor">
-        <form action="" method="post">
-          <h1 class="heading"> Vendor Registration</h1>
+        <form action="" method="post" class="reg-form">
+          <h1 class="heading heading-vendor-reg"> Vendor Registration</h1>
           <input
             type="text"
             name="vendor_name"
@@ -176,7 +175,7 @@
           <div class="vendor-reg-submit">
             <input
               type="submit"
-              value="Sign up"
+              value="Register"
               id="vendor-reg-btn"
               class="btn-action btn"
             />
@@ -189,10 +188,10 @@
         <h1 class="heading">Vendor Log In</h1>
         <form action="">
           <input
-            type="text"
+            type="email"
             name="vendor_name"
             id="vendor-name"
-            placeholder="enter business name"
+            placeholder="enter business email"
             required
           />
           <input
@@ -214,5 +213,7 @@
         </form>
       </div>
     </section>
+
+    <script src="index.js"></script>
   </body>
 </html>

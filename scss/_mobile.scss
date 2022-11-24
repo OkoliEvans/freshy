@@ -108,6 +108,58 @@
       }
     }
   }
+
+  //vendor page 
+  .vendor {
+    margin-top: 45%;
+
+    .vendor-desc {
+      .heading {
+        margin: 0 8%;
+      }
+
+      p {
+        font-size: 2.4rem;
+      }
+    }
+
+    .vendor-reg-btn {
+      padding: 1rem;
+      font-size: 2.2rem;
+    }
+
+   
+
+    .reg-form {
+      margin-left: 10%;
+      input {
+        width: 80%;
+        padding: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+
+      label {
+        font-size: 2.2rem;
+        font-weight: 600;
+      } 
+      
+      .heading-vendor-reg {
+      font-size: 3rem;
+      margin-left: -20%;
+    }
+    }
+
+    .vendor-login {
+      margin: 5rem auto 5rem 10%;
+
+      input {
+        padding: 2rem;
+        font-size: 2.2rem;
+        font-weight: 600;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 990px) {
