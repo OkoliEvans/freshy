@@ -223,6 +223,32 @@ header {
       text-align: center;
       height: 40rem;
     }
+
+    .see-menu {
+      p {
+        font-size: 1.5rem;
+        color: $dark-color;
+        font-weight: 600;
+
+        span a {
+          color: $green;
+          font-size: 1.9rem;
+          font-weight: 800;
+          cursor: pointer;
+          animation: redux .9s linear 2s infinite;
+        }
+        span a {
+          @keyframes redux {
+            from {
+              color: orangered;
+            }
+            to {
+              color: $green;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -297,7 +323,6 @@ header {
 
       .seller a,
       p {
-        text-decoration: none;
         font-size: 1.3rem;
       }
 
@@ -314,7 +339,7 @@ header {
 }
 
 .about {
-  margin: 7rem 0;
+  margin: 5rem 0;
   .row {
     display: flex;
     flex-wrap: wrap;
@@ -388,7 +413,7 @@ header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
-    //margin: 0 10%;
+    margin: 0 10%;
     //margin-bottom: 2rem;
 
     .box {
@@ -438,6 +463,47 @@ header {
       .content {
         padding: 2rem;
         padding-top: 0;
+
+        .stars {
+          padding-bottom: 1rem;
+
+          i {
+            font-size: 1.7rem;
+            color: $green;
+          }
+        }
+
+        h3 {
+          color: $dark-color;
+          font-size: 2rem;
+        }
+
+        p {
+          color: $light-color;
+          font-size: 1.7rem;
+          padding: .5rem 0;
+          line-height: 1.5;
+        }
+
+        .price {
+          color: $green;
+          margin-left: 1rem;
+          font-size: 2.5rem;
+        }
+
+        .seller a,
+        p {
+          font-size: 1.3rem;
+        }
+  
+        .seller a {
+          color: orangered;
+          font-weight: 600;
+        }
+  
+        .seller a:hover {
+          font-size: 1.35rem;
+        }
       }
 
     }
