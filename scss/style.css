@@ -156,6 +156,10 @@
   outline: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-family: "Inter", sans-serif;
   font-size: 65.5%;
@@ -336,7 +340,7 @@ header #bars {
 
 .dishes .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   gap: 1.5rem;
   margin: 0 10%;
   margin-bottom: 2rem;
@@ -350,13 +354,13 @@ header #bars {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 45.5rem;
+  height: 40rem;
 }
 
 .dishes .box-container .box img {
-  height: 70%;
+  height: 65%;
   width: 90%;
-  border-radius: 40%;
+  border-radius: 0.5rem;
 }
 
 .dishes .box-container .box .fa-heart,
@@ -370,7 +374,6 @@ header #bars {
   line-height: 5rem;
   font-size: 2rem;
   color: #192a56;
-  text-decoration: none;
 }
 
 .dishes .box-container .box .fa-heart {
@@ -415,7 +418,8 @@ header #bars {
 .dishes .box-container .box .seller {
   margin: 0.7rem 30% 0 0rem;
 }
-.dishes .box-container .box .seller a, .dishes .box-container .box p {
+.dishes .box-container .box .seller a,
+.dishes .box-container .box p {
   text-decoration: none;
   font-size: 1.3rem;
 }
@@ -428,7 +432,7 @@ header #bars {
 }
 
 .about {
-  margin-top: 7rem;
+  margin: 7rem 0;
 }
 .about .row {
   display: flex;
@@ -488,6 +492,51 @@ header #bars {
   border-radius: 50%;
 }
 
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.menu .box-container .box {
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+.menu .box-container .box .image {
+  height: 25rem;
+  width: 100%;
+  padding: 1.5rem;
+  overflow: hidden;
+  position: relative;
+}
+.menu .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.menu .box-container .box .image .fa-heart {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  text-align: center;
+  font-size: 2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #192a56;
+}
+.menu .box-container .box .image .fa-heart:hover {
+  background-color: #27ae60;
+  color: #fff;
+}
+.menu .box-container .box .content {
+  padding: 2rem;
+  padding-top: 0;
+}
+
 @media screen and (max-width: 990px) {
   html,
 body {
@@ -540,12 +589,13 @@ body {
   .dishes .box-container .box {
     width: 95%;
   }
-  .dishes .box-container .box .fa-heart {
+  /*.dishes .box-container .box .fa-heart {
     right: 1rem;
   }
+
   .dishes .box-container .box .fa-eye {
     left: 1rem;
-  }
+  }  */
   .sub-heading {
     padding-top: 3rem;
     font-size: 2rem;
