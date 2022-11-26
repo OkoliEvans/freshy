@@ -216,7 +216,7 @@ header {
       position: relative;
       overflow: hidden;
       text-align: center;
-      height: 42rem;
+      height: 45.5rem;
     }
   }
 }
@@ -286,6 +286,24 @@ header {
         font-weight: bolder;
         margin-right: 1rem;
         font-size: 2.5rem;
+      }
+
+      .seller {
+        margin: .7rem 30% 0 0rem ;
+      }
+
+      .seller a, p {
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+
+      .seller a {
+        color: orangered;
+        font-weight: 600;
+      }
+
+      .seller a:hover {
+        font-size: 1.35rem;
       }
     }
   }
@@ -360,21 +378,6 @@ header {
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

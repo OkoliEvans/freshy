@@ -350,7 +350,7 @@ header #bars {
   position: relative;
   overflow: hidden;
   text-align: center;
-  height: 42rem;
+  height: 45.5rem;
 }
 
 .dishes .box-container .box img {
@@ -411,6 +411,20 @@ header #bars {
   font-weight: bolder;
   margin-right: 1rem;
   font-size: 2.5rem;
+}
+.dishes .box-container .box .seller {
+  margin: 0.7rem 30% 0 0rem;
+}
+.dishes .box-container .box .seller a, .dishes .box-container .box p {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.dishes .box-container .box .seller a {
+  color: orangered;
+  font-weight: 600;
+}
+.dishes .box-container .box .seller a:hover {
+  font-size: 1.35rem;
 }
 
 .about {
@@ -556,10 +570,11 @@ body {
     margin-top: 45%;
   }
   .vendor .vendor-desc .heading {
-    margin: 0 8%;
+    margin: 0 7%;
   }
   .vendor .vendor-desc p {
-    font-size: 2.4rem;
+    font-size: 2.1rem;
+    margin: 0 5.5%;
   }
   .vendor .vendor-reg-btn {
     padding: 1rem;
