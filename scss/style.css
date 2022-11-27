@@ -200,12 +200,14 @@ header {
   background-color: #fff;
 }
 header #logo {
-  color: #192a56;
   font-size: 1.5rem;
   font-weight: bolder;
 }
 header #logo i {
   color: #27ae60;
+}
+header #logo span a {
+  color: #192a56;
 }
 header a#active {
   color: #fff;
@@ -362,28 +364,36 @@ header #bars {
   font-weight: 600;
 }
 .dishes .box-container .see-menu p span a {
+  border-radius: 0.5rem;
+  padding: 0.2rem 1.3rem;
   color: #27ae60;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   font-weight: 800;
   cursor: pointer;
-  -webkit-animation: redux 0.9s linear 2s infinite;
-          animation: redux 0.9s linear 2s infinite;
+  -webkit-animation: redux 2s ease-out 2s infinite;
+          animation: redux 2s ease-out 2s infinite;
 }
 @-webkit-keyframes redux {
   from {
-    color: orangered;
+    color: #f3f0f0;
   }
   to {
-    color: #27ae60;
+    background-color: orangered;
+    color: #f3f0f0;
   }
 }
 @keyframes redux {
   from {
-    color: orangered;
+    color: #f3f0f0;
   }
   to {
-    color: #27ae60;
+    background-color: orangered;
+    color: #f3f0f0;
   }
+}
+.dishes .box-container .see-menu p span a:hover {
+  background-color: orangered;
+  color: #f3f0f0;
 }
 
 .dishes .box-container .box img {
@@ -456,7 +466,10 @@ header #bars {
   font-weight: 600;
 }
 .dishes .box-container .box .seller a:hover {
-  font-size: 1.35rem;
+  background-color: orangered;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .about {
@@ -596,7 +609,58 @@ header #bars {
   font-weight: 600;
 }
 .menu .box-container .box .content .seller a:hover {
-  font-size: 1.35rem;
+  background-color: orangered;
+  color: #fff;
+  padding: 0.5rem 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.reviews {
+  margin: 5rem 0%;
+  width: auto;
+}
+.reviews .slide {
+  width: 80%;
+  padding: 2rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  position: relative;
+  height: auto;
+}
+.reviews .slide .fa-quote-right {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 6rem;
+  color: #ccc;
+}
+.reviews .slide .user {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  padding-bottom: 1.5rem;
+}
+.reviews .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.reviews .slide .user h3 {
+  color: #192a56;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+.reviews .slide .user i {
+  font-size: 1.3rem;
+  color: #27ae60;
+}
+.reviews .slide p {
+  color: #666;
+  font-size: 1.5rem;
+  line-height: 1.8;
 }
 
 @media screen and (max-width: 990px) {
@@ -651,13 +715,12 @@ body {
   .dishes .box-container .box {
     width: 95%;
   }
-  /*.dishes .box-container .box .fa-heart {
+  .dishes .box-container .box .fa-heart {
     right: 1rem;
   }
-
   .dishes .box-container .box .fa-eye {
     left: 1rem;
-  }  */
+  }
   .sub-heading {
     padding-top: 3rem;
     font-size: 2rem;

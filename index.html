@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
     <title>Yummy fresh foods</title>
   </head>
@@ -20,14 +24,14 @@
     <header>
       <div id="logo" class="p-30">
         <i class="fas fa-utensils"></i>
-        <span class="logo-text">Freshy</span>
+        <span class="logo-text"><a href="#">Freshy</a></span>
       </div>
 
       <nav class="navBar">
         <li><a id="active" href="#">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="vendor.html">Vendor</a></li>
-        <li><a href="#review">Reviews</a></li>
+        <li><a href="#reviews">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </nav>
       <div class="darkMode"></div>
@@ -50,25 +54,20 @@
       <label for="search-box" class="fas fa-search"></label>
       <i class="fas fa-times" id="close"></i>
     </form>
-    
+
     <!-- Dish slider -->
-    <div class="slider">
-
-
-    </div>
+    <div class="slider"></div>
 
     <!-- Dishes section -->
     <section class="dishes" id="dishes">
-
-      <h3 class="sub-heading"> our dishes </h3>
-      <h1 class="heading"> Popular Dishes</h1>
+      <h3 class="sub-heading">our dishes</h3>
+      <h1 class="heading">Popular Dishes</h1>
 
       <div class="box-container">
-
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/oha-soup.webp" alt="ora soup">
+          <img src="./assets/dishes/oha-soup.webp" alt="ora soup" />
           <h3>Hot spicy ora soup</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -85,7 +84,7 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/bitterleaf-soup.jpg" alt="onugwu soup">
+          <img src="./assets/dishes/bitterleaf-soup.jpg" alt="onugwu soup" />
           <h3>Bitterleaf soup with semo</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -102,7 +101,7 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/fried_rice_salad.webp" alt="fried rice">
+          <img src="./assets/dishes/fried_rice_salad.webp" alt="fried rice" />
           <h3>Fried rice with salad</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -119,7 +118,7 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/jollof-chicken-rep.jpg" alt="jollof rice">
+          <img src="./assets/dishes/jollof-chicken-rep.jpg" alt="jollof rice" />
           <h3>Spicy jollof rice</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -136,7 +135,7 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/abacha2.jpg" alt="Abacha">
+          <img src="./assets/dishes/abacha2.jpg" alt="Abacha" />
           <h3>Native abacha</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -153,7 +152,7 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/indomie-egg.webp" alt="indomie">
+          <img src="./assets/dishes/indomie-egg.webp" alt="indomie" />
           <h3>Indomie with vegetables</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
@@ -168,31 +167,35 @@
         </div>
 
         <div class="see-menu">
-          <p>see today's menu, click <span><a href="#menu">HERE</a></span></p>
+          <p>
+            see full menu, click <span><a href="#menu">here</a></span>
+          </p>
         </div>
       </div>
     </section>
 
     <!--  About us  -->
     <section class="about" id="about">
-
-      <h3 class="sub-heading"> about us </h3>
-      <h1 class="heading"> why choose Freshy?</h1>
+      <h3 class="sub-heading">about us</h3>
+      <h1 class="heading">why choose Freshy?</h1>
 
       <div class="row">
         <div class="image">
-          <img src="./assets/dishes/fried-chicken.jpg" alt="">
+          <img src="./assets/dishes/fried-chicken.jpg" alt="" />
         </div>
 
         <div class="content">
           <h3>we are dedicated to food service innovation</h3>
-          <p>At Freshy we don't just offer a one stop food hub that carters 
-            to your taste, but we go extra mile to make sure that all the foods
-            we bring to you are freshly made, in a clean and healthy kitchen.
+          <p>
+            At Freshy we don't just offer a one stop food hub that carters to
+            your taste, but we go extra mile to make sure that all the foods we
+            bring to you are freshly made, in a clean and healthy kitchen.
           </p>
-          <p>We also ensure that all vendors that work with us are certified by the
-            state Government. That means that they have the required trainings to prepare
-            and serve dishes to the public in safe and healthy way.
+          <p>
+            We also ensure that all vendors that work with us are certified by
+            the state Government. That means that they have the required
+            trainings to prepare and serve dishes to the public in safe and
+            healthy way.
           </p>
 
           <div class="icons-container">
@@ -210,26 +213,22 @@
               <i class="fas fa-headset"></i>
               <span>quality service</span>
             </div>
-
           </div>
 
           <a href="#" class="btn">Learn more</a>
         </div>
       </div>
-
     </section>
 
     <!-- Menu section -->
     <section class="menu" id="menu">
-
       <h3 class="sub-heading">our menu</h3>
       <h1 class="heading">today's special</h1>
 
       <div class="box-container">
-
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/chinese-rice.webp" alt="">
+            <img src="./assets/dishes/chinese-rice.webp" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -250,7 +249,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/Abacha.jpg" alt="">
+            <img src="./assets/dishes/Abacha.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -271,7 +270,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/ewedu.jpg" alt="">
+            <img src="./assets/dishes/ewedu.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -292,7 +291,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/grilled-chicken-jollof.jpg" alt="">
+            <img src="./assets/dishes/grilled-chicken-jollof.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -313,7 +312,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/whole-fried-chicken.jpg" alt="">
+            <img src="./assets/dishes/whole-fried-chicken.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -334,7 +333,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/vegetable-egg-fried-rice.webp" alt="">
+            <img src="./assets/dishes/vegetable-egg-fried-rice.webp" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -355,7 +354,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/jollof.jpg" alt="">
+            <img src="./assets/dishes/jollof.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -376,7 +375,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/indomie.jpg" alt="">
+            <img src="./assets/dishes/indomie.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -397,7 +396,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/chicken-fried.jpg" alt="">
+            <img src="./assets/dishes/chicken-fried.jpg" alt="" />
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -416,9 +415,183 @@
           </div>
         </div>
       </div>
-
     </section>
 
+    <!-- Review section -->
+
+    <section class="reviews" id="reviews">
+      <h3 class="sub-heading">customer's reviews</h3>
+      <h1 class="heading">
+        what they have to say about their experience with Freshy
+      </h1>
+
+      <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/users/user4.webp" alt="" />
+              <div class="user-info">
+                <h3>Priscilla</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              I love the simple interface very much, very easy to navigate and
+              well arranged. The payment process was very easy too. Got my fried
+              rice delivered in no time.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/users/user7.jpg" alt="" />
+              <div class="user-info">
+                <h3>Franks K.C</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              The customer service is nice. They take time to listen to my
+              issues and resolved it really fast. I hope the service remains
+              like this.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/users/user3.jpg" alt="" />
+              <div class="user-info">
+                <h3>Obinna Fred</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              Now I can get food delivered to my office in no time. Not just
+              foods, also fresh fruits. Freshy is a life saver.
+            </p>
+          </div>
+
+          <div class="swiper-slide slide">
+            <i class="fas fa-quote-right"></i>
+            <div class="user">
+              <img src="./assets/users/user1.jpg" alt="" />
+              <div class="user-info">
+                <h3>Jennifer</h3>
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star-half-alt"></i>
+                </div>
+              </div>
+            </div>
+            <p>
+              I love the simple interface very much, very easy to navigate and
+              well arranged. No issues at all.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Order section -->
+
+    <section class="order" id="order">
+      <h3 class="sub-heading">order now</h3>
+      <h1 class="heading">fill your orders below</h1>
+
+      <form action="" method="post">
+
+        <div class="inputBox">
+          <div class="input">
+            <span>your name</span>
+            <input
+              type="text"
+              name=""
+              id="buyer-name"
+              placeholder="enter your name"
+            />
+          </div>
+
+          <div class="input">
+            <span>your number</span>
+            <input
+              type="tel"
+              name=""
+              id="buyer-phone"
+              placeholder="enter phone number"
+            />
+          </div>
+        <div class="inputBox">
+            <div class="input">
+            <span>your order</span>
+            <input
+              type="text"
+              name=""
+              id="buyer-pref-food"
+              placeholder="enter preferred dish"
+            />
+          </div>
+
+          <div class="input">
+            <span>vendor</span>
+            <input
+              type="text"
+              name=""
+              id="buyer-pref-vendor"
+              placeholder="enter preferred vendor"
+            />
+          </div>
+        </div>
+          
+
+          <div class="input">
+            <span>additional food</span>
+            <input
+              type="text"
+              name=""
+              id="buyer-add-food"
+              placeholder="enter any additional dishes"
+            />
+          </div>
+
+          <div class="inputBox">
+            <span>your address</span>
+            <textarea
+              name=""
+              placeholder="enter delivery address"
+              id="buyer-address"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>

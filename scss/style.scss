@@ -57,7 +57,6 @@ header {
   background-color: #fff;
 
   #logo {
-    color: $dark-color;
     font: {
       size: 1.5rem;
       weight: bolder;
@@ -65,6 +64,10 @@ header {
 
     i {
       color: $green;
+    }
+
+    span a {
+      color: $dark-color;
     }
   }
 
@@ -231,21 +234,29 @@ header {
         font-weight: 600;
 
         span a {
+          border-radius: .5rem;
+          padding: .2rem 1.3rem;
           color: $green;
-          font-size: 1.9rem;
+          font-size: 1.7rem;
           font-weight: 800;
           cursor: pointer;
-          animation: redux .9s linear 2s infinite;
+          animation: redux 2s ease-out 2s infinite;
         }
         span a {
           @keyframes redux {
             from {
-              color: orangered;
+              color: #f3f0f0;
             }
             to {
-              color: $green;
+              background-color: orangered;
+              color: #f3f0f0;
             }
           }
+        }
+
+        span a:hover {
+          background-color: orangered;
+          color: #f3f0f0;
         }
       }
     }
@@ -332,7 +343,10 @@ header {
       }
 
       .seller a:hover {
-        font-size: 1.35rem;
+        background-color: orangered;
+        color: #fff;
+        padding: .5rem .5rem;
+        border-radius: .5rem;
       }
     }
   }
@@ -414,18 +428,12 @@ header {
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     margin: 0 10%;
-    //margin-bottom: 2rem;
 
     .box {
-      //padding: 2.5rem;
       background: #fff;
       border-radius: .5rem;
       border: .1rem solid rgba(0, 0, 0, 0.2);
       box-shadow: $box-shadow;
-      //position: relative;
-      //overflow: hidden;
-      //text-align: center;
-      //height: 45.5rem;
 
       .image {
         height: 25rem;
@@ -502,10 +510,67 @@ header {
         }
   
         .seller a:hover {
-          font-size: 1.35rem;
+          background-color: orangered;
+          color: #fff;
+          padding: .5rem .5rem;
+          border-radius: .5rem;
         }
       }
 
+    }
+  }
+}
+
+.reviews {
+  margin: 5rem 0%;
+  width: auto;
+
+  .slide {
+    width: 80%;
+    padding: 2rem;
+    box-shadow: $box-shadow;
+    border: .1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: .5rem;
+    position: relative;
+    height: auto;
+
+    .fa-quote-right {
+      position: absolute;
+      top: 2rem; right: 2rem;
+      font-size: 6rem;
+      $light-color: #ccc;
+      color: $light-color;
+    }
+
+    .user {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      padding-bottom: 1.5rem;
+
+      img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      h3 {
+        color: $dark-color;
+        font-size: 2rem;
+        padding-bottom: .5rem;
+      }
+
+      i {
+        font-size: 1.3rem;
+        color: $green;
+      }
+    }
+
+    p {
+      color: $light-color;
+      font-size: 1.5rem;
+      line-height: 1.8
     }
   }
 }
