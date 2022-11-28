@@ -32,6 +32,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="vendor.html">Vendor</a></li>
         <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#order">Order</a></li>
         <li><a href="#contact">Contact</a></li>
       </nav>
       <div class="darkMode"></div>
@@ -422,7 +423,7 @@
     <section class="reviews" id="reviews">
       <h3 class="sub-heading">customer's reviews</h3>
       <h1 class="heading">
-        what they have to say about their experience with Freshy
+        what they think about Freshy
       </h1>
 
       <div class="swiper-container review-slider">
@@ -523,7 +524,6 @@
       <h1 class="heading">fill your orders below</h1>
 
       <form action="" method="post">
-
         <div class="inputBox">
           <div class="input">
             <span>your name</span>
@@ -544,8 +544,10 @@
               placeholder="enter phone number"
             />
           </div>
+        </div>
+
         <div class="inputBox">
-            <div class="input">
+          <div class="input">
             <span>your order</span>
             <input
               type="text"
@@ -565,8 +567,8 @@
             />
           </div>
         </div>
-          
 
+        <div class="inputBox">
           <div class="input">
             <span>additional food</span>
             <input
@@ -576,20 +578,46 @@
               placeholder="enter any additional dishes"
             />
           </div>
+          <div class="input">
+            <span>date and time</span>
+            <input
+              type="datetime-local"
+              name=""
+              id="buyer-pref-time"
+              placeholder="delivery date and time?"
+            />
+          </div>
+        </div>
 
-          <div class="inputBox">
+        <div class="inputBox">
+          <div class="input">
             <span>your address</span>
             <textarea
-              name=""
+              name="buyer_address"
               placeholder="enter delivery address"
               id="buyer-address"
               cols="30"
               rows="10"
             ></textarea>
           </div>
+
+          <div class="input">
+            <span>your message</span>
+            <textarea
+              name="buyer_message"
+              id="buyer-msg"
+              cols="30"
+              rows="10"
+              placeholder="enter your message"
+            >
+            </textarea>
+          </div>
         </div>
+        <input type="submit" value="place order" class="btn">
       </form>
     </section>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="index.js"></script>

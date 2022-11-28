@@ -23,6 +23,7 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
   scroll-padding-top: 5.5rem;
+  background-color: rgb(248, 248, 248);
 }
 
 .btn {
@@ -234,8 +235,8 @@ header {
         font-weight: 600;
 
         span a {
-          border-radius: .5rem;
-          padding: .2rem 1.3rem;
+          border-radius: 0.5rem;
+          padding: 0.2rem 1.3rem;
           color: $green;
           font-size: 1.7rem;
           font-weight: 800;
@@ -266,7 +267,7 @@ header {
 .dishes .box-container .box img {
   height: 65%;
   width: 90%;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .dishes .box-container .box .fa-heart,
@@ -345,8 +346,8 @@ header {
       .seller a:hover {
         background-color: orangered;
         color: #fff;
-        padding: .5rem .5rem;
-        border-radius: .5rem;
+        padding: 0.5rem 0.5rem;
+        border-radius: 0.5rem;
       }
     }
   }
@@ -431,8 +432,8 @@ header {
 
     .box {
       background: #fff;
-      border-radius: .5rem;
-      border: .1rem solid rgba(0, 0, 0, 0.2);
+      border-radius: 0.5rem;
+      border: 0.1rem solid rgba(0, 0, 0, 0.2);
       box-shadow: $box-shadow;
 
       .image {
@@ -445,12 +446,13 @@ header {
         img {
           height: 100%;
           width: 100%;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
         }
 
         .fa-heart {
           position: absolute;
-          top: 2.5rem; right: 2.5rem;
+          top: 2.5rem;
+          right: 2.5rem;
           height: 5rem;
           width: 5rem;
           line-height: 5rem;
@@ -465,7 +467,6 @@ header {
             color: #fff;
           }
         }
-
       }
 
       .content {
@@ -489,7 +490,7 @@ header {
         p {
           color: $light-color;
           font-size: 1.7rem;
-          padding: .5rem 0;
+          padding: 0.5rem 0;
           line-height: 1.5;
         }
 
@@ -503,20 +504,19 @@ header {
         p {
           font-size: 1.3rem;
         }
-  
+
         .seller a {
           color: orangered;
           font-weight: 600;
         }
-  
+
         .seller a:hover {
           background-color: orangered;
           color: #fff;
-          padding: .5rem .5rem;
-          border-radius: .5rem;
+          padding: 0.5rem 0.5rem;
+          border-radius: 0.5rem;
         }
       }
-
     }
   }
 }
@@ -529,14 +529,16 @@ header {
     width: 80%;
     padding: 2rem;
     box-shadow: $box-shadow;
-    border: .1rem solid rgba(0, 0, 0, 0.2);
-    border-radius: .5rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.2);
+    border-radius: 0.5rem;
     position: relative;
     height: auto;
+    background-color: #fff;
 
     .fa-quote-right {
       position: absolute;
-      top: 2rem; right: 2rem;
+      top: 2rem;
+      right: 2rem;
       font-size: 6rem;
       $light-color: #ccc;
       color: $light-color;
@@ -558,7 +560,7 @@ header {
       h3 {
         color: $dark-color;
         font-size: 2rem;
-        padding-bottom: .5rem;
+        padding-bottom: 0.5rem;
       }
 
       i {
@@ -570,9 +572,63 @@ header {
     p {
       color: $light-color;
       font-size: 1.5rem;
-      line-height: 1.8
+      line-height: 1.8;
     }
   }
+}
+
+.order form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: $box-shadow;
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+
+  .inputBox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .input {
+      width: 49%;
+   
+
+      span {
+        display: block;
+        padding: .5rem 0;
+        font-size: 1.5rem;
+        color: $light-color;
+      }
+
+      input,
+      textarea {
+        background-color: #eee;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        font-size: 1.6rem;
+        color: $dark-color;
+        text-transform: none;
+        margin-bottom: 1rem;
+        width: 100%;   
+        border: .1px solid rgba(0, 0, 0, 0.2);
+      }
+
+      input:focus,
+      textarea:focus {
+        border: .1rem solid $green;
+      }
+
+      textarea {
+        height: 20rem;
+        resize: none;
+      }
+    }
+  }
+    .btn {
+      margin-top: 0;
+    }
 }
 
 @import "mobile";

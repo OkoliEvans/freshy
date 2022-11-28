@@ -161,11 +161,23 @@
       }
     }
   }
+
+
+
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width: 500px) {
   html,
   body {
     font-size: 50%;
+  } 
+  
+  .order form .inputBox .input {
+    width: 100%;
+  }
+
+  .dishes .box-container .box img {
+    height: auto;
+    width: 100%;
   }
 }

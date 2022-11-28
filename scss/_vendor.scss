@@ -36,8 +36,13 @@
     padding: 1.2rem;
     font-size: 1.8rem;
     margin: 1.3rem auto;
-    border: .1rem solid $dark-color;
+    border: .1px solid $dark-color;
     border-radius: 1rem;
+    
+  }
+
+  input:focus {
+    border: .1rem solid $green;
   }
 
   label {
@@ -67,8 +72,13 @@
       padding: 1.2rem;
       font-size: 1.8rem;
       margin: 1.3rem auto;
-      border: .1rem solid $dark-color;
+      border: .1px solid $dark-color;
       border-radius: 1rem;
+      color: #eee;
+    }
+
+    input:focus {
+      border: .1rem solid $green;
     }
   }
 }
