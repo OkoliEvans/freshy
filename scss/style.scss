@@ -211,10 +211,9 @@ header {
 .dishes {
   .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     gap: 1.5rem;
     margin: 0 10%;
-    margin-bottom: 2rem;
 
     .box {
       padding: 2.5rem;
@@ -225,7 +224,7 @@ header {
       position: relative;
       overflow: hidden;
       text-align: center;
-      height: 40rem;
+      height: auto;
     }
 
     .see-menu {
@@ -330,7 +329,7 @@ header {
       }
 
       .seller {
-        margin: 0.7rem 30% 0 0rem;
+        margin: 0.7rem 30% 0 0;
       }
 
       .seller a,
@@ -526,7 +525,7 @@ header {
   width: auto;
 
   .slide {
-    width: 80%;
+    width: 50%;
     padding: 2rem;
     box-shadow: $box-shadow;
     border: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -593,11 +592,10 @@ header {
 
     .input {
       width: 49%;
-   
 
       span {
         display: block;
-        padding: .5rem 0;
+        padding: 0.5rem 0;
         font-size: 1.5rem;
         color: $light-color;
       }
@@ -611,13 +609,13 @@ header {
         color: $dark-color;
         text-transform: none;
         margin-bottom: 1rem;
-        width: 100%;   
-        border: .1px solid rgba(0, 0, 0, 0.2);
+        width: 100%;
+        border: 0.1px solid rgba(0, 0, 0, 0.2);
       }
 
       input:focus,
       textarea:focus {
-        border: .1rem solid $green;
+        border: 0.1rem solid $green;
       }
 
       textarea {
@@ -626,9 +624,100 @@ header {
       }
     }
   }
-    .btn {
-      margin-top: 0;
+  .btn {
+    margin-top: 0;
+  }
+}
+
+.footer {
+  margin: 3rem auto 0 auto;
+  background-color: #fff;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+  margin-left: 5%;
+
+  .box {
+    h3 {
+      padding: 1.5rem 0;
+      font-size: 2.5rem;
+      color: $dark-color;
     }
+
+    a,
+    p {
+      display: block;
+      padding: 0.5rem 0;
+      font-size: 1.5rem;
+      color: $light-color;
+    }
+
+    a:hover {
+      color: $green;
+      text-decoration: underline;
+    }
+  }
+
+  .follow {
+    display: flex;
+
+    a {
+      margin: 1rem;
+      font-size: 2rem;
+    }
+  }
+}
+
+.footer .credit {
+  text-align: center;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  font-size: 2rem;
+  color: $dark-color;
+  padding: 0.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  font-weight: 600;
+
+  span {
+    color: $green;
+  }
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10000;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: none;
+
+  .loader-img {
+    height: 6rem;
+    width: 6rem;
+    border: 0.8rem solid #eee;
+    border-radius: 50%;
+    animation: loader 1s infinite;
+    border-top: 0.8rem solid $green;
+  }
+
+  .loader-img {
+    @keyframes loader {
+      0% {
+        rotate: 0deg;
+      }
+      100% {
+        rotate: 360deg;
+      }
+    }
+  }
 }
 
 @import "mobile";
