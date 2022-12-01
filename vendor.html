@@ -30,28 +30,34 @@
         <li><a href="#review">Reviews</a></li>
         <li><a href="#contact">Contact</a></li>
       </nav>
-      <div class="darkMode"></div>
 
       <div class="icons">
         <i class="fas fa-search" id="search-icon"></i>
         <i class="fas fa-shopping-cart" id="cart"></i>
         <i class="fas fa-bars" id="bars"></i>
       </div>
+
+      <!-- Search -->
+      <form action="" id="search-form">
+        <input
+          type="search"
+          name="search_box"
+          id="search-box"
+          placeholder="search dishes..."
+        />
+        <label for="search-box" class="fas fa-search"></label>
+        <i class="fas fa-times" id="close"></i>
+      </form>
+
+      <!-- Vendor Details and Registration-->
     </header>
 
-    <!-- Search -->
-    <form action="" id="search-form">
-      <input
-        type="search"
-        name="search_box"
-        id="search-box"
-        placeholder="search dishes..."
-      />
-      <label for="search-box" class="fas fa-search"></label>
-      <i class="fas fa-times" id="close"></i>
-    </form>
-
-    <!-- Vendor Details and Registration-->
+    <div class="vendor-auth">
+      <div class="reg">
+        <button type="submit" id="vendor-register-btn">register</button>
+      </div>
+      <button type="submit" class="vendor-login-btn">log in</button>
+    </div>
     <section class="vendor">
       <div class="vendor-img">
         <img src="./assets/chef/chefcooking.webp" alt="chef" />
@@ -85,9 +91,9 @@
       </div>
 
       <!-- Vendor Registration -->
-      <div class="form-vendor">
+      <div class="form-vendor" id="vendor-reg-form">
         <form action="" method="post" class="reg-form">
-          <h1 class="heading heading-vendor-reg"> Vendor Registration</h1>
+          <h1 class="heading heading-vendor-reg">Vendor Registration</h1>
           <input
             type="text"
             name="vendor_name"
@@ -184,7 +190,7 @@
       </div>
 
       <!-- Vendor Log in  -->
-      <div class="vendor-login">
+      <div class="vendor-login" id="vendor-login-form">
         <h1 class="heading">Vendor Log In</h1>
         <form action="">
           <input

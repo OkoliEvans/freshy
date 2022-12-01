@@ -73,15 +73,59 @@ var swiper = new Swiper(".review-slider", {
   },
 });
 
-/*
+
 //loader 
-window.addEventListener('load', () => {
-let loader = document.querySelector('.loader');
 
-loader.style.display = 'block';
+function loader() {
+  document.querySelector('.loader').classList.add('fade-out');
+}
 
-window.addEventListener('transitioned', () => {
-loader.style.display = 'none';
+function fadeOut() {
+  setInterval(loader, 2000);
+}
+
+window.onload = fadeOut;
+
+//heart icon
+let likeIcons = document.querySelectorAll('.fa-heart');
+
+likeIcons.forEach(likeIcon => {
+  likeIcon.addEventListener('click', () => {
+    likeIcon.style.color = 'red';
+  }) 
+
+  /*
+  likeIcon.addEventListener('click', changeColor);
+  function changeColor() {
+    likeIcon.style.color = 'red';
+    
+    likeIcon.addEventListener('click', undoColor)
+    function undoColor() {
+      likeIcon.style.color = '#192a56';
+    }
+  } */
+})
+
+
+
+// shopping cart 
+let addToCartButtons = document.querySelectorAll('#cart-btn');
+
+addToCartButtons.forEach(cartBtn => {
+  cartBtn.addEventListener('click', () => {
+
+  })
 });
 
-}); */
+//vendor log in form
+let vendorLoginBtn = document.querySelector('.vendor-login-btn');
+let vendorLogin = document.querySelector('.vendor-login');
+
+vendorLoginBtn.addEventListener('click', toggleVendorLogin) 
+
+function toggleVendorLogin() {
+  vendorLogin.classList.add('open-login');
+  alert('55');
+}
+
+

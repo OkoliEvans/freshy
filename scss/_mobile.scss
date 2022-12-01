@@ -117,8 +117,16 @@
   }
 
   //vendor page 
+.vendor-auth {
+  margin-top: 28%;
+
+  a {
+    font-size: 2rem;
+  }
+}
+
   .vendor {
-    margin-top: 45%;
+    margin-top: 20%;
 
     .vendor-desc {
       .heading {
@@ -135,8 +143,6 @@
       padding: 1rem;
       font-size: 2.2rem;
     }
-
-   
 
     .reg-form {
       margin-left: 10%;

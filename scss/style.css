@@ -79,9 +79,28 @@
   padding: 50px 0;
 }
 
+.vendor-auth {
+  margin-top: 9%;
+  margin-left: 10%;
+  display: flex;
+}
+.vendor-auth button {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #192a56;
+  margin: 0 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+.vendor-auth button:hover {
+  color: #27ae60;
+  background-color: #fff;
+  border: 0.1rem solid #27ae60;
+}
+
 .vendor {
   width: 100%;
-  margin-top: 13%;
+  margin-top: 5%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,7 +155,24 @@
 }
 
 .vendor .vendor-login {
-  margin: 5rem auto 5rem 32%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50%;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+.vendor .vendor-login .open-login {
+  visibility: visible;
+  top: 50%;
+  transform: -50%, -50% scale(1);
 }
 .vendor .vendor-login input {
   width: 90%;
@@ -153,6 +189,28 @@
 
 .btn:hover {
   border: none;
+}
+
+.vendor-login {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  height: 50%;
+  border-radius: 0.5rem;
+  visibility: hidden;
+  transition: transform 0.4s, top 0.4s;
+}
+
+.open-login {
+  visibility: visible;
+  top: 50%;
+  transform: -50%, -50% scale(1);
 }
 
 * {
@@ -718,6 +776,76 @@ header #bars {
   margin-top: 0;
 }
 
+.user-reg,
+.user-login {
+  margin: 4rem auto;
+}
+.user-reg form,
+.user-login form {
+  max-width: 90rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+.user-reg form .inputBox,
+.user-login form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.user-reg form .inputBox .input,
+.user-login form .inputBox .input {
+  width: 49%;
+}
+.user-reg form .inputBox .input span,
+.user-login form .inputBox .input span {
+  display: block;
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: #666;
+}
+.user-reg form .inputBox .input select,
+.user-login form .inputBox .input select {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+}
+.user-reg form .inputBox .input input,
+.user-login form .inputBox .input input {
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  color: #192a56;
+  text-transform: none;
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 0.1px solid rgba(0, 0, 0, 0.2);
+}
+.user-reg form .inputBox .input input:focus,
+.user-login form .inputBox .input input:focus {
+  border: 0.1rem solid #27ae60;
+}
+.user-reg form .btn,
+.user-login form .btn {
+  margin-top: 0;
+}
+
+.user-login form {
+  max-width: 45rem;
+}
+.user-login form .inputBox {
+  display: block;
+  width: 200%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .footer {
   margin: 3rem auto 0 auto;
   background-color: #fff;
@@ -752,15 +880,25 @@ header #bars {
   margin: 1rem;
   font-size: 2rem;
 }
+.footer .box-container .app-download {
+  margin-top: 0.5rem;
+}
+.footer .box-container .app-download h4 {
+  color: #192a56;
+  font-size: 2rem;
+}
+.footer .box-container .app-download img {
+  margin: 0;
+  height: 17rem;
+  width: 60%;
+}
 
 .footer .credit {
   text-align: center;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
   font-size: 2rem;
   color: #192a56;
-  padding: 0.5rem;
-  padding-top: 1.5rem;
-  margin-top: 1.5rem;
+  padding: 1rem;
   font-weight: 600;
 }
 .footer .credit span {
@@ -779,7 +917,6 @@ header #bars {
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  display: none;
 }
 .loader .loader-img {
   height: 6rem;
@@ -805,6 +942,11 @@ header #bars {
   100% {
     rotate: 360deg;
   }
+}
+
+.loader.fade-out {
+  top: 110%;
+  opacity: 0;
 }
 
 @media screen and (max-width: 990px) {
@@ -891,8 +1033,14 @@ body {
   .about .row .image img {
     margin-left: 5%;
   }
+  .vendor-auth {
+    margin-top: 28%;
+  }
+  .vendor-auth a {
+    font-size: 2rem;
+  }
   .vendor {
-    margin-top: 45%;
+    margin-top: 20%;
   }
   .vendor .vendor-desc .heading {
     margin: 0 7%;

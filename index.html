@@ -78,7 +78,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1500</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Fast chow</a></p>
         </div>
 
@@ -95,7 +95,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1700</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Mummy's pot</a></p>
         </div>
 
@@ -112,7 +112,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1200</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Chicken republic</a></p>
         </div>
 
@@ -129,7 +129,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N750</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Crunches</a></p>
         </div>
 
@@ -146,7 +146,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N500</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Axgard</a></p>
         </div>
 
@@ -163,7 +163,7 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1500</span>
-          <a href="#" class="btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn">add to cart</a>
           <p class="seller">sold by: <a href="#">Fast chow</a></p>
         </div>
 
@@ -242,7 +242,7 @@
             </div>
             <h3>Chinese rice</h3>
             <p>made with love from the Orient.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2000</span>
             <p class="seller">sold by: <a href="#">Fast chow</a></p>
           </div>
@@ -263,7 +263,7 @@
             </div>
             <h3>Delicious homemade abacha</h3>
             <p>made in a very healthy and natural way.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N800</span>
             <p class="seller">sold by: <a href="#">Axgard</a></p>
           </div>
@@ -284,7 +284,7 @@
             </div>
             <h3>Amala and Ewedu</h3>
             <p>made in a very healthy and natural way.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N1800</span>
             <p class="seller">sold by: <a href="#">Obalende</a></p>
           </div>
@@ -305,7 +305,7 @@
             </div>
             <h3>Fried rice</h3>
             <p>deliciously garnished with grilled chicken.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2500</span>
             <p class="seller">sold by: <a href="#">Nourisha</a></p>
           </div>
@@ -326,7 +326,7 @@
             </div>
             <h3>Whole fried chicken</h3>
             <p>perfect for family, celebrations and parties.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N10000</span>
             <p class="seller">sold by: <a href="#">Fast chow</a></p>
           </div>
@@ -347,7 +347,7 @@
             </div>
             <h3>Fried rice with vegetables</h3>
             <p>healthy and natural, just the way you love it.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2000</span>
             <p class="seller">sold by: <a href="#">Crunches</a></p>
           </div>
@@ -368,7 +368,7 @@
             </div>
             <h3>Delicious jollof rice</h3>
             <p>hot spicy jollof rice.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N800</span>
             <p class="seller">sold by: <a href="#">Mummy's pot</a></p>
           </div>
@@ -389,7 +389,7 @@
             </div>
             <h3>Homemade indomie</h3>
             <p>well prepared and seasoned, with fried egg.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N1200</span>
             <p class="seller">sold by: <a href="#">Obalende</a></p>
           </div>
@@ -410,7 +410,7 @@
             </div>
             <h3>Fried chicken</h3>
             <p>yummy fried chicken for your tasty moments.</p>
-            <a href="#" class="btn">add to cart</a>
+            <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N4000</span>
             <p class="seller">sold by: <a href="#">Chicken republic</a></p>
           </div>
@@ -602,16 +602,127 @@
           <div class="input">
             <span>your message</span>
             <textarea
-              name="buyer_message"
+              placeholder="enter your message"
+              name="buyer_msg"
               id="buyer-msg"
               cols="30"
               rows="10"
-              placeholder="enter your message"
             >
             </textarea>
           </div>
         </div>
-        <input type="submit" value="place order" class="btn" />
+        <input type="submit" value="place order" class="btn" id="checkout"/>
+      </form>
+    </section>
+
+    <!-- User Registration -->
+    <section class="user-reg" id="user-reg">
+      <h3 class="sub-heading">registration</h3>
+      <h1 class="heading">Create a new account</h1>
+
+      <form action="" method="post">
+        <div class="inputBox">
+          <div class="input">
+            <span>your name</span>
+            <input
+              type="text"
+              name="user_name"
+              id="user-name"
+              placeholder="enter your name"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <span>your number</span>
+            <input
+              type="tel"
+              name="user_phone"
+              id="user-phone"
+              placeholder="enter phone number"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="inputBox">
+          <div class="input">
+            <span>your email</span>
+            <input
+              type="email"
+              name="user_email"
+              id="user-email"
+              placeholder="enter email address"
+            />
+          </div>
+
+          <div class="input">
+            <span>gender</span>
+            <select name="user_gender" id="user-gender">
+              <option value="">select</option>
+              <option value="male">male</option>
+              <option value="female">female</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="inputBox">
+          <div class="input">
+            <span>password</span>
+            <input
+              type="password"
+              name="user_password"
+              id="user-password"
+              placeholder="enter password"
+              required
+            />
+          </div>
+          <div class="input">
+            <span>confirm password</span>
+            <input
+              type="password"
+              name="user_password"
+              id="user-password"
+              placeholder="enter password again"
+              required
+            />
+          </div>
+        </div>
+        </div>
+        <input type="submit" value="register" class="btn" id="reg-btn"/>
+      </form>
+    </section>
+
+    <!-- User log in-->
+    <section class="user-login" id="user-login">
+      <h3 class="sub-heading">log in</h3>
+      <h1 class="heading">log in to your account</h1>
+
+      <form action="" method="post">
+        <div class="inputBox">
+          <div class="input">
+            <span>your email</span>
+            <input
+              type="email"
+              name="user_email"
+              id="user-email"
+              placeholder="enter your email"
+              required
+            />
+          </div>
+
+          <div class="input">
+            <span>your password</span>
+            <input
+              type="password"
+              name="user_password"
+              id="user-password"
+              placeholder="enter password"
+              required
+            />
+          </div>
+        </div>
+        <input type="submit" value="log in" class="btn" id="login-btn"/>
       </form>
     </section>
 
@@ -645,6 +756,12 @@
             <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
             <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          </div>
+          <div class="app-download">
+            <h4>Download app</h4>
+            <div class="app-img">
+             <a href=""><img src="./assets/Google-Play-vs-Apple-Store-2.png" alt=""></a> 
+            </div>
           </div>
         </div>
       </div>
