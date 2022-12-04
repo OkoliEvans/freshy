@@ -91,11 +91,13 @@
   margin: 0 0.7rem;
   font-weight: 600;
   cursor: pointer;
+  border: 0;
+  background-color: transparent;
 }
 .vendor-auth button:hover {
   color: #27ae60;
-  background-color: #fff;
-  border: 0.1rem solid #27ae60;
+  text-decoration: underline;
+  font-size: 1.7rem;
 }
 
 .vendor {
@@ -179,9 +181,10 @@
   padding: 1.2rem;
   font-size: 1.8rem;
   margin: 1.3rem auto;
-  border: 0.1px solid #192a56;
+  border: 0;
   border-radius: 1rem;
   color: #eee;
+  border-bottom: 0.1rem solid #192a56;
 }
 .vendor .vendor-login input:focus {
   border: 0.1rem solid #27ae60;
@@ -889,6 +892,7 @@ header #bars {
 }
 .footer .box-container .app-download img {
   margin: 0;
+  margin-left: -4%;
   height: 17rem;
   width: 60%;
 }
@@ -953,6 +957,7 @@ header #bars {
   html,
 body {
     font-size: 55%;
+    overflow-x: hidden;
   }
   header {
     padding: 1rem 2rem;
@@ -962,6 +967,9 @@ body {
   }
 }
 @media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+  }
   header .icons #bars {
     display: inline-block;
   }
@@ -1086,6 +1094,7 @@ body {
   html,
 body {
     font-size: 50%;
+    overflow-x: hidden;
   }
   .order form .inputBox .input {
     width: 100%;
