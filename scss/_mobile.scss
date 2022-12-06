@@ -180,6 +180,28 @@
     }
   }
 
+  .form-vendor {
+    form {
+      width: 100%;
+
+      input {
+        width: 80%;
+        padding: 2rem;
+        font-size: 2.2rem;
+        font-weight: 400;
+      }
+
+      label {
+        font-size: 2.2rem;
+      }
+
+      button {
+        padding: 2.2rem;
+        width: 15rem;
+      }
+    }
+  }
+
   .footer .box-container{
     margin: 0 10%;
   }

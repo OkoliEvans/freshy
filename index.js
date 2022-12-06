@@ -86,7 +86,7 @@ function fadeOut() {
 
 window.onload = fadeOut;
 
-//heart icon
+//heart icons
 let likeIcons = document.querySelectorAll('.fa-heart');
 
 likeIcons.forEach(likeIcon => {
@@ -109,23 +109,33 @@ likeIcons.forEach(likeIcon => {
 
 
 // shopping cart 
-let addToCartButtons = document.querySelectorAll('#cart-btn');
+let addItemId = 0;
+//let item = document.querySelectorAll('.box')
+//let addToCartButtons = document.querySelectorAll('#cart-btn');
+//let cartCount = document.querySelector('.item-count');
+//cartCount.innerHTML = cartItem 
 
-addToCartButtons.forEach(cartBtn => {
-  cartBtn.addEventListener('click', () => {
+//addToCartButtons.forEach(cartBtn => {
+//  cartBtn.addEventListener('click', addToCart)
 
-  })
-});
+  function addToCart(item) {
+    addItemId += 1;
+    let selectedItem = document.createElement('div');
+    selectedItem.classList.add('itemImage');
+    selectedItem.setAttribute('id',addItemId);
+    let img = document.createElement('img');
+    img.setAttribute('src',item.children[0].currentSrc);
+    let cartItem = document.getElementById('title');
+    selectedItem.append(img);
+    cartItem.append(selectedItem);
+  }
+//});
 
 //vendor log in form
-let vendorLoginBtn = document.querySelector('.vendor-login-btn');
-let vendorLogin = document.querySelector('.vendor-login');
-
-vendorLoginBtn.addEventListener('click', toggleVendorLogin) 
-
-function toggleVendorLogin() {
-  vendorLogin.classList.add('open-login');
-  alert('55');
+function popupLogin() {
+  document.querySelector('.vendor-login').classList.add('open-login');
 }
+
+
 
 

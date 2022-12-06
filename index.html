@@ -39,7 +39,7 @@
 
       <div class="icons">
         <i class="fas fa-search" id="search-icon"></i>
-        <i class="fas fa-shopping-cart" id="cart"></i>
+        <i class="fas fa-shopping-cart" id="cart"></i><span class="item-count">0</span>
         <i class="fas fa-bars" id="bars"></i>
       </div>
     </header>
@@ -56,6 +56,20 @@
       <i class="fas fa-times" id="close"></i>
     </form>
 
+    <!--  Cart Section -->
+    <section class="cart" id="cart">
+
+      <div class="box-container">
+
+        <div class="cart-title">
+          <h3 class="sub-heading">your cart</h3>
+          <h1 class="heading">items added to cart</h1>
+        </div>
+
+      </div>
+
+    </section>
+
     <!-- Dish slider -->
     <div class="slider"></div>
 
@@ -65,11 +79,11 @@
       <h1 class="heading">Popular Dishes</h1>
 
       <div class="box-container">
-        <div class="box">
+        <div class="box" id="item1">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/oha-soup.webp" alt="ora soup" />
-          <h3>Hot spicy ora soup</h3>
+          <img src="./assets/dishes/oha-soup.webp" alt="ora soup" class="itemImage"/>
+          <h3 id="title">Hot spicy ora soup</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -78,15 +92,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1500</span>
-          <a href="#" class="btn" id="cart-btn">add to cart</a>
+          <button type="button" class="btn" id="cart-btn" onclick="addToCart(item1)">add to cart</button>
           <p class="seller">sold by: <a href="#">Fast chow</a></p>
         </div>
 
-        <div class="box">
+        <div class="box" id="item2">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/bitterleaf-soup.jpg" alt="onugwu soup" />
-          <h3>Bitterleaf soup with semo</h3>
+          <img src="./assets/dishes/bitterleaf-soup.jpg" alt="onugwu soup" class="itemImage"/>
+          <h3 id="title">Bitterleaf soup with semo</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -95,15 +109,15 @@
             <i class="fas fa-star-half-alt"></i>
           </div>
           <span>N1700</span>
-          <a href="#" class="btn" id="cart-btn">add to cart</a>
+          <a href="#" class="btn" id="cart-btn" onclick="addToCart(item2)">add to cart</a>
           <p class="seller">sold by: <a href="#">Mummy's pot</a></p>
         </div>
 
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/fried_rice_salad.webp" alt="fried rice" />
-          <h3>Fried rice with salad</h3>
+          <img src="./assets/dishes/fried_rice_salad.webp" alt="fried rice" class="itemImage" />
+          <h3 id="title">Fried rice with salad</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -119,8 +133,8 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/jollof-chicken-rep.jpg" alt="jollof rice" />
-          <h3>Spicy jollof rice</h3>
+          <img src="./assets/dishes/jollof-chicken-rep.jpg" alt="jollof rice" class="itemImage"/>
+          <h3 id="title">Spicy jollof rice</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -136,8 +150,8 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/abacha2.jpg" alt="Abacha" />
-          <h3>Native abacha</h3>
+          <img src="./assets/dishes/abacha2.jpg" alt="Abacha" class="itemImage"/>
+          <h3 id="title">Native abacha</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -153,8 +167,8 @@
         <div class="box">
           <a href="#" class="fas fa-heart"></a>
           <a href="#" class="fas fa-eye"></a>
-          <img src="./assets/dishes/indomie-egg.webp" alt="indomie" />
-          <h3>Indomie with vegetables</h3>
+          <img src="./assets/dishes/indomie-egg.webp" alt="indomie" class="itemImage"/>
+          <h3 id="title">Indomie with vegetables</h3>
           <div class="stars">
             <i class="fas fa-star"></i>
             <i class="fas fa-star"></i>
@@ -229,7 +243,7 @@
       <div class="box-container">
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/chinese-rice.webp" alt="" />
+            <img src="./assets/dishes/chinese-rice.webp" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -240,7 +254,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Chinese rice</h3>
+            <h3 id="title">Chinese rice</h3>
             <p>made with love from the Orient.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2000</span>
@@ -250,7 +264,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/Abacha.jpg" alt="" />
+            <img src="./assets/dishes/Abacha.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -261,7 +275,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Delicious homemade abacha</h3>
+            <h3 id="title">Delicious homemade abacha</h3>
             <p>made in a very healthy and natural way.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N800</span>
@@ -271,7 +285,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/ewedu.jpg" alt="" />
+            <img src="./assets/dishes/ewedu.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -282,7 +296,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Amala and Ewedu</h3>
+            <h3 id="title">Amala and Ewedu</h3>
             <p>made in a very healthy and natural way.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N1800</span>
@@ -292,7 +306,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/grilled-chicken-jollof.jpg" alt="" />
+            <img src="./assets/dishes/grilled-chicken-jollof.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -303,7 +317,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Fried rice</h3>
+            <h3 id="title">Fried rice</h3>
             <p>deliciously garnished with grilled chicken.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2500</span>
@@ -313,7 +327,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/whole-fried-chicken.jpg" alt="" />
+            <img src="./assets/dishes/whole-fried-chicken.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -324,7 +338,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Whole fried chicken</h3>
+            <h3 id="title">Whole fried chicken</h3>
             <p>perfect for family, celebrations and parties.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N10000</span>
@@ -334,7 +348,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/vegetable-egg-fried-rice.webp" alt="" />
+            <img src="./assets/dishes/vegetable-egg-fried-rice.webp" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -345,7 +359,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Fried rice with vegetables</h3>
+            <h3 id="title">Fried rice with vegetables</h3>
             <p>healthy and natural, just the way you love it.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N2000</span>
@@ -355,7 +369,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/jollof.jpg" alt="" />
+            <img src="./assets/dishes/jollof.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -366,7 +380,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Delicious jollof rice</h3>
+            <h3 id="title">Delicious jollof rice</h3>
             <p>hot spicy jollof rice.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N800</span>
@@ -376,7 +390,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/indomie.jpg" alt="" />
+            <img src="./assets/dishes/indomie.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -387,7 +401,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Homemade indomie</h3>
+            <h3 id="title">Homemade indomie</h3>
             <p>well prepared and seasoned, with fried egg.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N1200</span>
@@ -397,7 +411,7 @@
 
         <div class="box">
           <div class="image">
-            <img src="./assets/dishes/chicken-fried.jpg" alt="" />
+            <img src="./assets/dishes/chicken-fried.jpg" alt="" class="itemImage"/>
             <a href="#" class="fas fa-heart"></a>
           </div>
           <div class="content">
@@ -408,7 +422,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star-half-alt"></i>
             </div>
-            <h3>Fried chicken</h3>
+            <h3 id="title">Fried chicken</h3>
             <p>yummy fried chicken for your tasty moments.</p>
             <a href="#" class="btn" id="cart-btn">add to cart</a>
             <span class="price">N4000</span>

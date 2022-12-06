@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Open+Sans&display=swap");
 @import "config";
 @import "vendor";
+@import "register";
 
 * {
   box-sizing: border-box;
@@ -104,6 +105,7 @@ header {
 
   .icons {
     margin: 1.5rem 2.3rem;
+    position: relative;
 
     i {
       cursor: pointer;
@@ -130,6 +132,17 @@ header {
   #bars {
     display: none;
   }
+}
+
+.item-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  background-color: $green;
+  border-radius: 50%;
+  padding: .2rem .5rem;
+  margin-left: -7%;
 }
 
 .dishes {
@@ -191,6 +204,21 @@ header {
   right: 3rem;
   font-size: 5rem;
   cursor: pointer;
+}
+
+.cart {
+  border: 0.1rem solid $dark-color;
+  margin-top: -1.6%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  float: right;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
 }
 
 .sub-heading {
@@ -263,7 +291,7 @@ header {
   }
 }
 
-.dishes .box-container .box img {
+.itemImage {
   height: 65%;
   width: 90%;
   border-radius: 0.5rem;

@@ -79,6 +79,10 @@
   padding: 50px 0;
 }
 
+a {
+  color: #192a56;
+}
+
 .vendor-auth {
   margin-top: 9%;
   margin-left: 10%;
@@ -96,8 +100,7 @@
 }
 .vendor-auth button:hover {
   color: #27ae60;
-  text-decoration: underline;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 }
 
 .vendor {
@@ -122,31 +125,13 @@
 
 .vendor-reg-btn {
   margin-left: 10%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
 }
 
 .vendor .heading-vendor-reg {
   margin-left: -50%;
-}
-
-.vendor .reg-form {
-  margin: 10rem auto 0 25%;
-  width: 100%;
-}
-.vendor .reg-form input {
-  width: 50%;
-  padding: 1.2rem;
-  font-size: 1.8rem;
-  margin: 1.3rem auto;
-  border: 0.1px solid #192a56;
-  border-radius: 1rem;
-}
-.vendor .reg-form input:focus {
-  border: 0.1rem solid #27ae60;
-}
-.vendor .reg-form label {
-  display: block;
-  font-size: 1.8rem;
-  margin-top: 3rem;
 }
 
 .vendor .vendor-desc p {
@@ -156,27 +141,7 @@
   margin: 0 10%;
 }
 
-.vendor .vendor-login {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(0.1);
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: 50%;
-  border-radius: 0.5rem;
-  visibility: hidden;
-  transition: transform 0.4s, top 0.4s;
-}
-.vendor .vendor-login .open-login {
-  visibility: visible;
-  top: 50%;
-  transform: -50%, -50% scale(1);
-}
-.vendor .vendor-login input {
+.vendor input {
   width: 90%;
   padding: 1.2rem;
   font-size: 1.8rem;
@@ -186,7 +151,7 @@
   color: #eee;
   border-bottom: 0.1rem solid #192a56;
 }
-.vendor .vendor-login input:focus {
+.vendor input:focus {
   border: 0.1rem solid #27ae60;
 }
 
@@ -197,23 +162,92 @@
 .vendor-login {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   transform: translate(-50%, -50%) scale(0.1);
-  background-color: #fff;
+  background-color: #ccc;
+  opacity: 0.9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 50%;
+  height: 100%;
+  width: 100%;
   border-radius: 0.5rem;
   visibility: hidden;
   transition: transform 0.4s, top 0.4s;
 }
+.vendor-login h1 {
+  display: block;
+}
+.vendor-login form {
+  background-color: #fff;
+  border-radius: 2.5rem;
+  margin: 1rem 2rem;
+  padding: 1.5rem;
+}
 
 .open-login {
   visibility: visible;
-  top: 50%;
-  transform: -50%, -50% scale(1);
+  transform: scale(1);
+}
+
+.form-vendor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5rem auto 5rem auto;
+}
+.form-vendor form {
+  margin-top: 8%;
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  width: 60%;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.form-vendor form .heading-vendor-reg {
+  margin: 1.5rem auto;
+  display: block;
+}
+.form-vendor form input {
+  background-color: #eee;
+  margin: 1rem;
+  padding: 1.2rem;
+  border-radius: 1.8rem;
+  width: 70%;
+  border: 0.1px solid #666;
+}
+.form-vendor form input:hover {
+  border: 0.18rem solid #27ae60;
+}
+.form-vendor form label {
+  font-size: 1.5rem;
+  color: #192a56;
+  font-weight: 600;
+  margin: 3rem auto 1rem 10%;
+  width: 100%;
+}
+.form-vendor form .logo {
+  margin: 2.5rem auto 1.5rem 14%;
+}
+.form-vendor form .bank-details {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0.5rem auto 2.5rem 14%;
+}
+.form-vendor form .vendor-password {
+  margin: 2.5rem auto 2.5rem 14%;
+}
+.form-vendor form .vendor-password label {
+  margin-left: 2%;
+}
+.form-vendor form button {
+  margin-bottom: 2rem;
 }
 
 * {
@@ -304,6 +338,7 @@ header .navBar li a:hover {
 }
 header .icons {
   margin: 1.5rem 2.3rem;
+  position: relative;
 }
 header .icons i {
   cursor: pointer;
@@ -325,6 +360,17 @@ header .icons i:hover {
 }
 header #bars {
   display: none;
+}
+
+.item-count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+  position: absolute;
+  background-color: #27ae60;
+  border-radius: 50%;
+  padding: 0.2rem 0.5rem;
+  margin-left: -7%;
 }
 
 .dishes {
@@ -392,6 +438,21 @@ header #bars {
   right: 3rem;
   font-size: 5rem;
   cursor: pointer;
+}
+
+.cart {
+  border: 0.1rem solid #192a56;
+  margin-top: -1.6%;
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  float: right;
+  overflow-x: hidden;
+  overflow-y: auto;
+  z-index: 1;
 }
 
 .sub-heading {
@@ -464,7 +525,7 @@ header #bars {
   color: #f3f0f0;
 }
 
-.dishes .box-container .box img {
+.itemImage {
   height: 65%;
   width: 90%;
   border-radius: 0.5rem;
@@ -1085,6 +1146,22 @@ body {
     padding: 2rem;
     font-size: 2.2rem;
     font-weight: 600;
+  }
+  .form-vendor form {
+    width: 100%;
+  }
+  .form-vendor form input {
+    width: 80%;
+    padding: 2rem;
+    font-size: 2.2rem;
+    font-weight: 400;
+  }
+  .form-vendor form label {
+    font-size: 2.2rem;
+  }
+  .form-vendor form button {
+    padding: 2.2rem;
+    width: 15rem;
   }
   .footer .box-container {
     margin: 0 10%;

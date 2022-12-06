@@ -1,14 +1,17 @@
+a {
+  color: $dark-color;
+}
+
 .vendor-auth {
   margin-top: 9%;
   margin-left: 10%;
   display: flex;
- 
 
   button {
     padding: 1rem;
     font-size: 1.5rem;
     color: $dark-color;
-    margin: 0 .7rem;
+    margin: 0 0.7rem;
     font-weight: 600;
     cursor: pointer;
     border: 0;
@@ -16,8 +19,7 @@
 
     &:hover {
       color: $green;
-      text-decoration: underline;
-      font-size: 1.7rem;
+      font-size: 1.6rem;
     }
   }
 }
@@ -44,86 +46,41 @@
 }
 
 .vendor-reg-btn {
-   margin-left: 10%;
+  margin-left: 10%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  margin-bottom: 4rem;
 }
 
 .vendor .heading-vendor-reg {
   margin-left: -50%;
 }
 
-.vendor .reg-form {
-  margin: 10rem auto 0 25%;
-  width: 100%;
+.vendor {
+  .vendor-desc {
+    p {
+      font-size: 1.5rem;
+      padding: 1.5rem 0;
+      line-height: 2;
+      margin: 0 10%;
+    }
+  }
+}
 
+.vendor {
   input {
-    width: 50%;
+    width: 90%;
     padding: 1.2rem;
     font-size: 1.8rem;
     margin: 1.3rem auto;
-    border: .1px solid $dark-color;
+    border: 0;
     border-radius: 1rem;
-    
+    color: #eee;
+    border-bottom: 0.1rem solid $dark-color;
   }
 
   input:focus {
-    border: .1rem solid $green;
-  }
-
-  label {
-    display: block;
-    font-size: 1.8rem;
-    margin-top: 3rem;
-  }
-}
-
-.vendor {
-    .vendor-desc {
-        p {
-            font-size: 1.5rem;
-            padding: 1.5rem 0;
-            line-height: 2;
-            margin: 0 10%;
-        }
-    }
-}
-
-.vendor {
-  .vendor-login {
-    //margin: 5rem auto 5rem 32%;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0.1);
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    height: 50%;    
-    border-radius: .5rem;
-    visibility: hidden;
-    transition: transform .4s, top 0.4s;
-
-    .open-login {
-      visibility: visible;
-      top: 50%;
-      transform: (-50%, -50%) scale(1);
-    }
-
-    input {
-      width: 90%;
-      padding: 1.2rem;
-      font-size: 1.8rem;
-      margin: 1.3rem auto;
-      border: 0;
-      border-radius: 1rem;
-      color: #eee;
-      border-bottom: .1rem solid $dark-color;
-    }
-
-    input:focus {
-      border: .1rem solid $green;
-    }
+    border: 0.1rem solid $green;
   }
 }
 
@@ -132,25 +89,35 @@
 }
 
 .vendor-login {
-  //margin: 5rem auto 5rem 32%;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   transform: translate(-50%, -50%) scale(0.1);
-  background-color: #fff;
+  background-color: #ccc;
+  opacity: 0.9;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  height: 50%;    
-  border-radius: .5rem;
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
   visibility: hidden;
-  transition: transform .4s, top 0.4s;
-}
+  transition: transform 0.4s, top 0.4s;
 
+  h1 {
+    display: block;
+  }
+
+  form {
+    background-color: #fff;
+    border-radius: 2.5rem;
+    margin: 1rem 2rem;
+    padding: 1.5rem;
+  }
+}
 
 .open-login {
   visibility: visible;
-  top: 50%;
-  transform: (-50%, -50%) scale(1);
+  transform: scale(1);
 }
