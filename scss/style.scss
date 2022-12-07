@@ -2,6 +2,7 @@
 @import "config";
 @import "vendor";
 @import "register";
+@import "php-admin";
 
 * {
   box-sizing: border-box;
@@ -836,3 +837,4 @@ header {
 }
 
 @import "mobile";
+@import "php-mobile";

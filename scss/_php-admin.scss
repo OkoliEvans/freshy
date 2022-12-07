@@ -1,0 +1,164 @@
+.container {
+  max-width: 75rem;
+  margin: 2rem auto;
+}
+
+section {
+  padding: 2rem;
+}
+
+#menu-btn {
+  margin-left: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #eee;
+  display: none;
+}
+
+.message {
+  background-color: #eee;
+  position: sticky;
+  top: 0; left: 0;
+  z-index: 10000;
+  border-radius: .5rem;
+  padding: 1.5rem 2rem;
+  margin: 0 auto;
+  max-width: 75rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  span {
+    font-size: 2rem;
+    color: $dark-color;
+  }
+
+  i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: $dark-color;
+
+    &:hover {
+      color: $orange;
+    }
+  }
+}
+
+.add-product-form {
+  max-width: 50rem;
+  background-color: #eee;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: $dark-color;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .box {
+    text-transform: none;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.7rem;
+    color: $dark-color;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    margin: 1rem 0;
+    width: 100%;
+  }
+}
+
+.header {
+  background-color: $dark-color;
+  position: sticky;
+  top: 0; left: 0;
+  z-index: 1000;
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    gap: 1.5rem;
+
+    .fa-utensils {
+      color: $green;
+    }
+
+    .logo-text {
+      a {
+        color: #fff;
+        font-size: 1.7rem;
+        margin-right: auto;
+      }
+    }
+
+    .navBar {
+      a {
+        margin-left: 2rem;
+        font-size: 1.5rem;
+        color: #fff;
+
+        &:hover {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.header .flex .cart {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #fff;
+  background-color: $dark-color;
+}
+
+.header .flex .cart:hover {
+    color: $orange;
+}
+
+.header .flex .cart span {
+    padding: .3rem .5rem;
+    border-radius: .5rem;
+    background-color: #eee;
+    color: $dark-color;
+    font-size: 2rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background-color: $dark-color;
+  color: #fff;
+  font-size: 1.7rem;
+  padding: 1.5rem 3rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.option-btn {
+  background-color: $orange;
+}
+.delete-btn {
+  margin-top: 0;
+  background-color: $red;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+  background-color: $black;
+}
+
+

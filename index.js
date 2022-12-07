@@ -75,7 +75,6 @@ var swiper = new Swiper(".review-slider", {
 
 
 //loader 
-
 function loader() {
   document.querySelector('.loader').classList.add('fade-out');
 }
@@ -94,42 +93,18 @@ likeIcons.forEach(likeIcon => {
     likeIcon.style.color = 'red';
   }) 
 
-  /*
-  likeIcon.addEventListener('click', changeColor);
-  function changeColor() {
-    likeIcon.style.color = 'red';
-    
-    likeIcon.addEventListener('click', undoColor)
-    function undoColor() {
-      likeIcon.style.color = '#192a56';
-    }
-  } */
 })
 
 
+// menu bar admin.php 
+let menuBar = document.querySelector('#menu-btn');
+let navBar2 = document.querySelector('.header .navBar');
 
-// shopping cart 
-let addItemId = 0;
-//let item = document.querySelectorAll('.box')
-//let addToCartButtons = document.querySelectorAll('#cart-btn');
-//let cartCount = document.querySelector('.item-count');
-//cartCount.innerHTML = cartItem 
+menuBar.onclick = () => {
+  menuBar.classList.toggle('fa-times');
+  navBar2.classList.toggle('active');
+}
 
-//addToCartButtons.forEach(cartBtn => {
-//  cartBtn.addEventListener('click', addToCart)
-
-  function addToCart(item) {
-    addItemId += 1;
-    let selectedItem = document.createElement('div');
-    selectedItem.classList.add('itemImage');
-    selectedItem.setAttribute('id',addItemId);
-    let img = document.createElement('img');
-    img.setAttribute('src',item.children[0].currentSrc);
-    let cartItem = document.getElementById('title');
-    selectedItem.append(img);
-    cartItem.append(selectedItem);
-  }
-//});
 
 //vendor log in form
 function popupLogin() {
