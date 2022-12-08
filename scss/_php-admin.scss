@@ -35,7 +35,7 @@ section {
   }
 
   i {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     cursor: pointer;
     color: $dark-color;
 
@@ -115,7 +115,7 @@ section {
 
 .header .flex .cart {
     margin-left: 2rem;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: #fff;
   background-color: $dark-color;
 }
@@ -125,18 +125,20 @@ section {
 }
 
 .header .flex .cart span {
-    padding: .3rem .5rem;
-    border-radius: .5rem;
-    background-color: #eee;
-    color: $dark-color;
+    padding: .2rem .5rem;
+    border-radius: 2rem;
+    background-color: #fff;
+    color: $green;
     font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25%;
 }
 
 .btn,
+.update-btn,
 .option-btn,
 .delete-btn {
   display: block;
-  width: 100%;
   text-align: center;
   background-color: $dark-color;
   color: #fff;
@@ -145,6 +147,8 @@ section {
   border-radius: 0.5rem;
   cursor: pointer;
   margin-top: 1rem;
+  border: 0;
+  width: 100%;
 }
 
 .option-btn {
@@ -161,4 +165,199 @@ section {
   background-color: $black;
 }
 
+.option-btn i,
+.delete-btn i{
+  padding-right: .5rem;
+}
 
+.display-product-table table {
+  width: 100%;
+  text-align: center;
+
+  thead {
+    th {
+      padding: 1.5rem;
+      font-size: 1.7rem;
+      background-color: $black;
+      color: #fff;
+    }
+  }
+
+  tr {
+    &:nth-child(even) {
+      background-color: #eee;
+    }
+
+    td {
+      padding: 1.5rem;
+      font-size: 1.7rem;
+      color: $black;
+
+      &:first-child {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.display-product-table {
+  .empty {
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #eee;
+    color: $dark-color;
+    font-size: 1.7rem;
+    padding: 1.5rem;
+  }
+}
+
+.edit-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  background-color: #eee;
+  opacity: .97;
+  padding: 2rem;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+
+  form {
+    width: 50rem;
+    border-radius: .5rem;
+    background-color: #fff;
+    text-align: center;
+    padding: 2rem;
+
+    .box {
+      width: 100%;
+      background-color: #eee;
+      border-radius: .5rem;
+      margin: 1rem 0;
+      font-size: 1.7rem;
+      color: $dark-color;
+      padding: 1.2rem 1.4rem;
+      text-transform: none;
+      border: 0;
+    }
+  }
+}
+
+.products {   
+    margin-left: -25%; margin-right: -25%;
+  .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 35rem);
+    gap: 1.5rem;
+    justify-content: center;
+
+    .box {
+      text-align: center;
+      padding: 2rem;
+      box-shadow: $box-shadow;
+      border: .1rem solid rgba($color: #000000, $alpha: 0.2);
+      border-radius: .5rem;
+      background-color: #fff;
+
+      img {
+        height: 25rem;
+        width: 90%;
+        border-radius: .5rem;
+      }
+
+      h3 {
+        margin: 1rem 0;
+        font-size: 2.5rem;
+        color: $dark-color;
+      }
+
+      .price {
+        font-size: 2.5rem;
+        color: $green;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.shopping-cart {
+  table {
+    text-align: center;
+    width: 100%;
+    margin-left: -10%;
+
+    .table-bottom {
+      background-color: #eee;
+    }
+
+    thead {
+      th {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        color: #fff;
+        background-color: $black;
+      }
+    }
+
+    tr {
+      td {
+        border-bottom: .1rem solid rgba($color: #000000, $alpha: 0.2);
+        padding: 1.5rem;
+        font-size: 1.5rem;
+        color: $black;
+
+        .option-btn {
+          width: 25rem;
+        }
+
+        .delete-btn {
+          width: 18rem;
+        }
+      }
+    }
+
+    input[type="number"] {
+      border: .1rem solid rgba($color: #000000, $alpha: 0.2);
+      padding: 1rem 2rem;
+      font-size: 1.5rem;
+      color: $black;
+      width: 7rem;
+    }
+
+    input[type="submit"] {
+      padding: .5rem 1.5rem;
+      cursor: pointer;
+      font-size: 1.5rem;
+      background-color: $orange;
+      color: #fff;
+      border: 0;
+
+      &:hover {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.shopping-cart {
+  .checkout-btn {
+    text-align: center;
+    margin-top: 1rem;
+
+    a {
+      display: inline-block;
+      width: auto;
+
+      
+    }
+    
+    a.disabled {
+        pointer-events: none;
+        opacity: .5;
+        user-select: none;
+      }
+  }
+}

@@ -105,6 +105,12 @@ menuBar.onclick = () => {
   navBar2.classList.toggle('active');
 }
 
+//product edit cancel button on admin.php
+document.querySelector('#close-edit').onclick = () => {
+  document.querySelector('.edit-form').style.display = 'none';
+  window.location.href = 'admin.php';
+}
+
 
 //vendor log in form
 function popupLogin() {
